@@ -1,0 +1,21 @@
+{
+    "name": "SFM3000",
+    "keywords": "sensirion,sfm3000,flow,gas",
+    "description": "Sensirion SFM3000 Low Pressure Drop Digital Flow Meter Library for Arduino",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/allwize/sfm3000.git"
+    },
+    "version": "0.0.1",
+    "license": "LGPL-3.0",
+    "frameworks": "arduino",
+    "platforms": ["atmelavr", "samd"],
+    "authors": {
+        "name": "Xose Perez",
+        "email": "xose@espurna.io",
+        "maintainer": true
+    },
+    "examples": [
+        "examples/*/*.ino"
+    ]
+}
