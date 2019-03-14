@@ -32,6 +32,8 @@
 #define SFM3000_POLYNOMIAL        0x0131
 #define SFM3000_OFFSET            32000.0
 #define SFM3000_SCALE             140.0
+#define SFM3000_MIN_FLOW          -200
+#define SFM3000_MAX_FLOW          200
 
 class SFM3000 {
 

@@ -6,7 +6,7 @@
         "type": "git",
         "url": "https://github.com/allwize/sfm3000.git"
     },
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "LGPL-3.0",
     "frameworks": "arduino",
     "platforms": ["atmelavr", "samd"],

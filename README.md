@@ -2,7 +2,7 @@
 
 Sensirion SFM3000 Low Pressure Drop Digital Flow Meter Library for Arduino
 
-[![version](https://img.shields.io/badge/version-0.0.1-brightgreen.svg)](CHANGELOG.md)
+[![version](https://img.shields.io/badge/version-0.0.2-brightgreen.svg)](CHANGELOG.md)
 [![codacy](https://img.shields.io/codacy/grade/bf83947ad9a8401aa486937abc724ad3/master.svg)](https://www.codacy.com/app/AllWize/sfm3000/dashboard)
 [![license](https://img.shields.io/badge/license-LGPL--3.0-orange.svg)](LICENSE)
 
@@ -15,6 +15,7 @@ See example
 ## License
 
 Copyright (C) 2019 by AllWize
+
 Copyright (C) 2019 by Xose Pérez <xose at espurna dot io>
 
 The SFM3000 library is free software: you can redistribute it and/or modify

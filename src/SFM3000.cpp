@@ -53,12 +53,19 @@ uint32_t SFM3000::getSerial() {
 }
 
 float SFM3000::getMeasurement() {
+    
     if (SFM3000_READ_FLOW != _current_command) {
         if (!_write(SFM3000_READ_FLOW)) return 0xFFFF;
     }
-    uint16_t flow;
-    if (!_readWithDelay(&flow)) return 0xFFFF;
-    return ((float) flow - SFM3000_OFFSET) / SFM3000_SCALE;
+    
+    uint16_t raw;
+    if (!_readWithDelay(&raw)) return 0xFFFF;
+    
+    float flow = ((float) raw - SFM3000_OFFSET) / SFM3000_SCALE;
+    if ((flow < SFM3000_MIN_FLOW) || (SFM3000_MAX_FLOW < flow)) return 0xFFFF;
+    
+    return flow;
+
 }
 
 void SFM3000::reset() {
