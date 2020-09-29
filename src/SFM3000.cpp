@@ -69,7 +69,7 @@ float SFM3000::getMeasurement() {
 }
 
 void SFM3000::reset() {
-	_write(0x2000);
+	_write(SFM3000_SOFT_RESET);
     delay(100);
 }
 
